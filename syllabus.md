@@ -2,6 +2,8 @@
 
 This is a mixture of the course syllabi for the courses DIT183, DAT038, DAT495, DAT525, and TDA417. 
 
+----
+
 ## English version
 
 ### Entry requirements
@@ -43,12 +45,14 @@ On successful completion of the course the student will be able to:
 - analyse the efficiency of basic algorithms and data structures
 - make informed choices between different data structures and algorithms for different applications
 
-## Examination format
+### Examination format
 
 The course is examined by an individual written exam (4.5 hec), and assignments carried out in groups (3.0 hec).
 [In the course DAT525 the assignments give 1.5 hp]
 
 The grading scale comprises: 5, 4, 3, and Fail (U). The final grade is given based on the grade for the written exam.
+
+----
 
 ## Swedish version
 
@@ -91,7 +95,7 @@ Efter godkänd kurs ska studenten kunna:
 - analysera effektivitet hos grundläggande algoritmer och datastrukturer
 - göra välgrundade val mellan olika datastrukturer och algoritmer för olika tillämpningar
 
-## Examinationsformer
+### Examinationsformer
 
 Kursen examineras genom en skritlig salstentamen (4,5 hp), och inlämningsuppgifter som genomförs i grupp (3.0 hp).
 [I kursen DAT525 ger inlämningsuppgifterna 1.5 hp]
