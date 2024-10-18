@@ -8,7 +8,7 @@ Here you can find general information that are common to (almost) all courses in
 
 ***Note***: The information in these pages is not accurate for the course DIT962!
 
-- Here is the [official syllabus for all courses except DIT962]().
+- Here is the [official syllabus for all courses except DIT962](syllabus).
 - And here is the [official syllabus for DIT962](https://kursplaner.gu.se/pdf/kurs/en/DIT962.pdf).
 
 ## Teacher team
