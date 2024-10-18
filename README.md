@@ -25,6 +25,8 @@ The following are the team of teachers giving the different course instances. We
 
 The course consists of two "modules": one (4.5hp) is the written examination, and one (3.0hp) are the assignments. (Except the course DAT525 which only has 1.5hp assignments)
 
+### Literature
+
 The [course literature and additional reading tips](literature.md) are covered in a separate page.
 
 ### Lectures
