@@ -83,7 +83,7 @@ This list is sometimes updated, so there might be differences from when you took
 - Binary heaps (adding, removing the minimum):
     - worst-case logarithmic O(log *n*)
 - Graph algorithms (Kruskal, Prim, UCS/Dijsktra):
-    - in a sparse graph, O(|V|) = O(|E|), so we can use *n* = |V| or |E|
+    - in a sparse graph, O(\|V\|) = O(\|E\|), so we can use *n* = \|V\| or \|E\|
     - worst-case linearithmic O(*n* log *n*) on sparse graphs
 
 ## Algorithms to know
