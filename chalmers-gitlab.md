@@ -108,7 +108,8 @@ Once you have created a submission tag, you cannot change it: it serves as your 
 
 **Note**: The tag must live in the Chalmers GitLab repository, not just your local git clone. If you create the tag locally and then push, make sure to **push tags**.
 
-You can check your submission by visiting ***Repository → Tags***. The submission tag should be highlighted as <span class="badge badge-success gl-ml-2 gl-badge sm badge-pill" style="background-color: #bfedd2; color: #003f00;">protected</span>:
+You can check your submission by visiting ***Repository → Tags***. The submission tag should be highlighted as 
+<span style="background-color: #bfedd2; color: #006000; padding: 0 10px; border-radius: 10px">protected</span>:
 
 ![show-tags.png](img/show-tags.png)
 
