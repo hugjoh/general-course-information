@@ -27,7 +27,7 @@ The course consists of two "modules": one (4.5hp) is the written examination, an
 
 ### Literature
 
-The [course literature and additional reading tips](literature.md) are covered in a separate page.
+- The [course literature and additional reading tips](literature.md) are covered in a separate page.
 
 ### Lectures
 
