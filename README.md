@@ -8,7 +8,7 @@ Here you can find general information that are common to (almost) all courses in
 
 ***Note***: The information in these pages is not accurate for the course DIT962!
 
-- Here is the [official syllabus for all courses except DIT962](syllabus).
+- Here is the [official syllabus for all courses except DIT962](syllabus.md).
 - And here is the [official syllabus for DIT962](https://kursplaner.gu.se/pdf/kurs/en/DIT962.pdf).
 
 ## Teacher team
@@ -45,8 +45,8 @@ The course consists of two "modules": one (4.5hp) is the written examination, an
 - In addition, you have to complete individual Canvas quizzes to get a passing grade on the assignments.
 
 More information:
-- [Information about the labs]()
-- [Working with Chalmers GitLab]()
+- [Information about the labs](lab-info.md)
+- [Working with Chalmers GitLab](chalmers-gitlab.md)
 
 ### Weekly exercises
 
