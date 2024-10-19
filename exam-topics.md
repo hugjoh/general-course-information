@@ -1,4 +1,6 @@
-# Exam topics
+# Exam topics 
+{:.no_toc}
+
 Here is a detailed list what topics you should know for the exam, and also what you do not need to know.
 
 ***Note for old students***:
