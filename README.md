@@ -1,4 +1,5 @@
 # Data structures and algorithms
+{:.no_toc}
 
 Data structures and algorithms are fundamental building blocks in almost all software products. Knowledge of data abstraction, data structures, and algorithms is important in the construction, use, and maintenance of adaptable, reusable, and efficient program components.
 
@@ -10,6 +11,11 @@ Here you can find general information that are common to (almost) all courses in
 
 - Here is the [official syllabus for all courses except DIT962](syllabus.md).
 - And here is the [official syllabus for DIT962](https://kursplaner.gu.se/pdf/kurs/en/DIT962.pdf).
+
+Table of contents:
+
+* TOC
+{:toc}
 
 ## Teacher team
 
@@ -92,7 +98,7 @@ Note: The academic year is divided into four study periods (läsperioder, LP), w
 - Also a single-subject course (fristående kurs) at GU
 - Course responsible: Peter Ljunglöf and Hazem Torfah
 
-### LP4, DIT182+DAT495
+### LP4, DIT183+DAT495
 - Both Chalmers and GU students
 - Compulsory in the GU program N1SOF, and in Chalmers program TIDAL
 - Given at the Lindholmen campus (spring 2025)
