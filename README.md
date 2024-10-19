@@ -1,5 +1,4 @@
 # Data structures and algorithms
-{:.no_toc}
 
 Data structures and algorithms are fundamental building blocks in almost all software products. Knowledge of data abstraction, data structures, and algorithms is important in the construction, use, and maintenance of adaptable, reusable, and efficient program components.
 
@@ -11,11 +10,6 @@ Here you can find general information that are common to (almost) all courses in
 
 - Here is the [official syllabus for all courses except DIT962](syllabus.md).
 - And here is the [official syllabus for DIT962](https://kursplaner.gu.se/pdf/kurs/en/DIT962.pdf).
-
-Table of contents:
-
-* TOC
-{:toc}
 
 ## Teacher team
 
