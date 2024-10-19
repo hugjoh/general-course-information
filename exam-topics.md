@@ -4,6 +4,8 @@ Here is a detailed list what topics you should know for the exam, and also what 
 ***Note for old students***:
 This list is sometimes updated, so there might be differences from when you took the course! If you plan to write a reexam, please make sure you know all topics in this list, even if it was not part of your course instance.
 
+* TOC {:toc}
+
 ## General knowledge
 - Given a problem, knowing which data structure or algorithm to use
 - Solving coding problems
