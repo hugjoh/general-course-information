@@ -20,48 +20,52 @@ GitLab will notify you about new lab projects and gradings of your submissions v
 
 You can also [set your name](https://git.chalmers.se/-/profile) and a profile picture, if you wish.
 
-### Set up an SSH key
-
-You will use git to synchronize your local work with the lab project on Chalmers GitLab. For this, you need an SSH key.
-
-1. If you have not generated an SSH key before: open a terminal and run `ssh-keygen`, leaving all input prompts empty (including empty password).
-2. The public part of your key is stored relative to your home directory in `.ssh/id_<something>.pub`. You want the contents of this file (copy it so you can paste it in your browser). It should look something like this (the initial part may differ depending on settings): "ssh-ed25519 longstringofnumbersandcharacters your.email@student.chalmers.se"
-3. Add the contents of this file as a [key on Chalmers GitLab](https://git.chalmers.se/-/profile/keys).
-4. Check your setup by running `ssh -T git@git.chalmers.se` in your terminal. You may be prompted to confirm the authenticity of the host. The command should then print a welcome sentence.
-
-Here are [more detailed instructions](https://git.chalmers.se/help/user/ssh.md). If you have any problems, ask on Discord or talk to a teaching assistant during lab supervision.
-
-**Note**: If you use the Chalmers lab computers, you may experience a problem with git cloning. This is due to the following:
-
-- `ssh-keygen` puts the key in `.ssh` in your user folder on the C drive.
-- git looks for your key in `.ssh` in your Z drive.
-
-To solve this, just copy over the `.ssh` directory from your user folder on the C drive to the Z drive.
-
 ## Work on a lab
 
 For each lab assignment, we add you as a developer to a project on Chalmers GitLab. Scrolling down past the file listing, you will see the lab description (this is the file `README.md`, written in Markdown). You can use this project as you see fit (issues, merge requests, etc.), but mainly it consists of a **git repository**. For group projects, you can choose how to collaborate: together on one computer or everyone using their own computer and using git to synchronize changes.
 
 Each lab comes with specific instructions on what you should implement and what questions you should answer (in `answers.txt`). Please do not change the signatures or behaviour of pre-existing methods unless instruncted as it will make your submission harder for us to test and grade. Of course, you are allowed to add things that do not affect the existing functionality (new variables, functions, methods, classes, and, most importantly, comments).
 
-### Use git
+### Set up an SSH key and install Git
 
-[Git](https://en.wikipedia.org/wiki/Git) is the industry standard for version control and collaborative software development. Make sure [it is installed](https://git.chalmers.se/help/topics/git/how_to_install_git/index.md) on your system and working. It will pay off to [become familiar](https://git.chalmers.se/help/gitlab-basics/start-using-git.md) with it!
+See the separate instructions for Windows, Linux and MacOS for how to create an SSH key and install git. When you're ready, follow the instructions below to get started.
 
-To interact with the provided git repository, you have several options:
+- Instructions for Windows
+- Instructions for Linux
+- Instructions for MacOS
 
-- [Clone](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#clone-with-ssh) the git repository via SSH:
+### Configure Git
 
-  ![chalmers-gitlab-clone-ssh.png](img/chalmers-gitlab-clone-ssh.png)
+Before you can make a commit (upload your code) you will have to set your name and email. You can set it either locally (for a specific project) or globally (for all projects). Open a terminal and run either of the following commands. To set a local configuration, you need to be in a repository so this can't be done before you have cloned it (which you will do below). You will soon learn how to clone (download) it.
 
-  Each time you want to do some work in your local copy:
-    - `git pull` to [pull](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#download-the-latest-changes-in-the-project) the latest changes other group members might have done,
-    - `git add -u` and `git commit` to [add and commit](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#add-and-commit-local-changes) your own changes,
-    - `git push` to [push](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#send-changes-to-gitlabcom) to GitLab.
+#### Global configuration
+``` shell
+git config --global user.name "Full name"
+git config --global user.email "cid@chalmers.se"
+```
 
-  For a summary of useful commands, see the [git cheatsheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf).
+#### Local configuration
+``` shell
+git config --local user.name "Full name"
+git config --local user.email "cid@chalmers.se"
+```
 
-- If you use an IDE such as IntelliJ or Eclipse, it comes with built-in git integration. For example, in IntelliJ, simply create a project using ***File → New → Project from Version Control*** and paste the repository SSH URL you get from the project page by clicking on ***Clone***.
+### Clone the repository
+
+To interact with the provided git repository, you have several options. By clicking on the **Code** button on Gitlab you get a number of alternatives. If you're using one of the IDEs listed, you can click on it (SSH version) to open it automatically. Otherwise follow the instructions below to use git clone or the integrated Git tools in your IDE.
+
+![chalmers-gitlab-clone-ssh.png](img/gitlab-clone.png)
+
+#### Use Git clone
+- [Clone](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#clone-with-ssh) the git repository by copying the SSH address above and running the following command.
+
+``` shell
+git clone <SSH address>
+```
+
+#### Use IDE tools
+
+If you use an IDE such as IntelliJ or Eclipse, it comes with built-in git integration. For example, in IntelliJ, simply create a project using ***File → New → Project from Version Control*** and paste the repository SSH URL you get from the project page by clicking on ***Clone***.
 
   **Note**: If IntelliJ highlights lots of strange errors after cloning, you need to set up the project SDK (any recent version will do):
 
@@ -83,6 +87,32 @@ There are branches ***java*** and ***python*** in your project. You can have a l
 **Warning**: this will erase all previous work on branch ***main***. You can make a backup beforehand if desired:
 
 - `git branch main-backup main`
+
+### Make changes to your code
+
+Now you're ready to start working on the labs! If you're multiple people working on the lab at the same time, make sure you [pull](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#download-the-latest-changes-in-the-project) any changes your other group members might have made in your IDE or using the command:
+
+``` shell
+git pull
+```
+
+After you've made some changes to the code or your answers and want to [commit](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#add-and-commit-local-changes) (upload) them to Gitlab, you first have to stage your them. Either do it in your IDE or run:
+
+``` shell
+git add -u
+```
+
+Now you can make a commit, which stores what the staged code looks like at the moment. Either click on commit in your IDE or run the command below. You will have to specify a commit message. The contents of the message aren't important, but will be displayed on Gitlab for all eternity.
+``` shell
+git commit
+```
+
+Finally, you can [push](https://git.chalmers.se/help/gitlab-basics/start-using-git.md#send-changes-to-gitlabcom) your changes to make them appear on Gitlab. Either click the button in your IDE or run:
+``` shell
+git push
+```
+
+For a summary of useful commands, see the [git cheatsheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf).
 
 ### Robograder
 
