@@ -30,9 +30,9 @@ Each lab comes with specific instructions on what you should implement and what 
 
 See the separate instructions for Windows, Linux and MacOS for how to create an SSH key and install git. When you're ready, follow the instructions below to get started.
 
-- Instructions for Windows
-- Instructions for Linux
-- Instructions for MacOS
+- [Instructions for Windows](chalmers-gitlab-windows.md)
+- [Instructions for Linux](chalmers-gitlab-linux.md)
+- [Instructions for MacOS](chalmers-gitlab-macos.md)
 
 ### Configure Git
 
